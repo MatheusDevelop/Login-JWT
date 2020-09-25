@@ -1,5 +1,9 @@
 # Loginjsonwt
 
+<strong>Dar npm install no inicio</strong><br/>
+<strong>Alterar o endereço da API local no service e guards</strong>
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
 ## Development server
