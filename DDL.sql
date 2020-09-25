@@ -1,0 +1,7 @@
+CREATE DATABASE JWTApp;
+USE JWTApp;
+CREATE TABLE Usuarios(
+	IdUsuario uniqueidentifier PRIMARY KEY NOT NULL,
+	Nome VARCHAR(20) NOT NULL ,
+	Senha VARCHAR(225) NOT NULL,	
+);

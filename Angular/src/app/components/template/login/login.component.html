@@ -1,0 +1,32 @@
+<div class="box__login__text">
+   
+    Login no sistema
+</div>
+<article class="fadeIn">
+    <div class="box__login__forms">
+        Sign in
+        <div class="alert" *ngIf="openNotif">
+            Senha ou usuario invalido
+        </div>
+        <div>
+            <input [(value)]="user" (change)="user=($event.target.value)" type="text"placeholder="Seu usuario..."/>
+            <span></span>     
+                      
+                       
+        </div>
+        <div>
+            <input [(value)]="pass" (change)="pass=($event.target.value) "type="password" placeholder="Sua senha..."/>
+            <span></span>
+        </div>
+        <div>
+            <input (click)="validationInputs()" class="button" type="submit" value="Login"/>
+        </div>
+        <div>
+            <a routerLink="/singup">Cadastrar-se</a>
+        </div>
+        
+      
+        
+    </div>            
+</article>
+

@@ -1,0 +1,35 @@
+<div class="box__login__text">
+   
+    Cadastrando Usuario
+</div>
+<article class="fadeIn">
+    <div class="box__login__forms">
+        Sign up
+        <div class="alert" *ngIf="openNotifError">
+            Usuario já existente
+        </div><br/>
+        <span class="success" *ngIf="openNotifSuccess">
+            Usuario criado com sucesso<br/><br/>Você será redirecionado em<br/> 5 segundos...
+        </span>
+        <div>
+            <input [(value)]="user" (change)="user=($event.target.value)" type="text"placeholder="Digite um usuario..."/>
+            <span></span>            
+                      
+                       
+        </div>
+        <div>
+            <input [(value)]="pass" (change)="pass=($event.target.value)" type="password" placeholder="Digite uma senha..."/>
+            <span></span>
+        </div>
+        <div>
+            <input (click)="validationInputs()" class="button" type="submit" value="Cadastrar"/>
+        </div>
+        <div>
+            <a routerLink="/login">Login</a>
+        </div>
+        
+      
+        
+    </div>            
+</article>
+
